@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&family=Scheherazade+New&display=swap");
+
+/* font-family: "Gemunu Libre", sans-serif;
+  font-family: "Scheherazade New", serif; */
+
+/* CSS FOR ALL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("../Images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Gemunu Libre", sans-serif;
+  scroll-behavior: smooth;
+}
+/* NAVBAR */
+
+.home-page-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.logo {
+  font-size: 55px;
+  font-weight: 700;
+  margin-right: 35%;
+}
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+.home-navbar-menu {
+  font-size: 22px;
+  margin-right: 4%;
+  padding: 15px;
+}
+.home-navbar-menue-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.home-navbar-menue-links li {
+  margin-left: 25%;
+  text-decoration: none;
+}
+.home-navbar-menue-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.home-navbar-menue-links li a:hover {
+  color: #28a728;
+}
+
+/* WELCOME TO ORL */
+.welcome-to-orl-section {
+  height: 100vh;
+}
+.welcome-to-orl {
+  margin: 17% 0 0 4%;
+  width: 50%;
+}
+.welcome-to-orl h1 {
+  font-size: 7rem;
+  font-weight: 700;
+}
+.welcome-to-orl p {
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 30%;
+}
+
+/* BASIC INFO ON HOME PAGE ABOUT ORL */
+
+.info {
+  width: 55%;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 6% 0 0 1%;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.explore-courses-button {
+  width: 350px;
+  border-radius: 25px;
+  background-color: #28a745;
+  margin: 3% 0 0 26%;
+  text-align: center;
+  padding: 1%;
+}
+.explore-courses-button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* FOOTER */
+.footer-container {
+  margin-top: 6%;
+  background: rgba(168, 175, 169, 0.8);
+  display: flex;
+}
+.address-info-footer,
+.contact-footer,
+.footer-location {
+  width: 33%;
+  text-align: center;
+  margin-left: 1%;
+}
+.social-media-links,
+.contact-footer-margin,
+.footer-location-margin {
+  margin: 5%;
+  padding: 1%;
+}
+.social-media-links h3,
+.contact-footer h3,
+.footer-location h3 {
+  margin-bottom: 3%;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 1%;
+  border-radius: 10px;
+}
+.social-media-links img,
+.contact-footer img,
+.footer-location img {
+  margin-left: 5%;
+}
+.all-rigths-reserved-footer {
+  height: 9%;
+  background: rgba(255, 255, 255, 0.8);
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.all-rigths-reserved-footer span {
+  margin: 1% 0 0 0;
+}
+
+/* about us page */
+.about-us-page-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.aboutus-page-contnet {
+  margin: 10%;
+  border-radius: 10px;
+  width: 60%;
+  text-align: center;
+  padding: 1%;
+  background: rgba(231, 211, 211, 0.8);
+}
+.aboutus-page-contnet h1 {
+  font-size: 55px;
+  font-weight: 700;
+}
+.aboutus-page-contnet p {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 2%;
+}
+.about-us-page-developer-info-container {
+  margin: 10% 0 -10% 0;
+  width: 60%;
+  text-align: center;
+  padding: 1%;
+  border-radius: 10px;
+  background: rgba(231, 211, 211, 0.8);
+}
+.about-us-page-developer-info-container h1 {
+  font-size: 55px;
+  font-weight: 700;
+}
+.about-us-page-data-photo-container {
+  width: 100%;
+  padding: 1%;
+  display: flex;
+}
+.about-us-page-developer-info-photo {
+  width: 100%;
+  margin-left: 1%;
+  display: flex;
+}
+.about-us-page-developer-info-photo .developer-photo {
+  width: 20%;
+  border-radius: 50%;
+  margin: 1% 0 0 10%;
+}
+.about-us-page-developer-info-data {
+  width: 70%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.about-us-page-developer-info-data-p {
+  width: 80%;
+  margin: 5% 0 0 0;
+  letter-spacing: 3px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.about-us-page-developer-info-data p {
+  width: 80%;
+  letter-spacing: 2px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.about-us-page-developer-info-contact-data {
+  width: 50%;
+  margin: 2% 0 0 15%;
+  padding: 1%;
+}
+.about-us-page-developer-info-contact-data {
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 600;
+  background: rgba(117, 114, 114, 0.8);
+  border-radius: 20px;
+}
+.about-us-page-developer-info-contact-data a img {
+  width: 10%;
+  padding: 1%;
+  font-weight: 700;
+}
+
+/* contact us page */
+.contact-us-page-content {
+  margin: 6% 0 0 0;
+  padding: 1%;
+}
+.contact-us-page-content-one {
+  display: flex;
+  padding: 1%;
+  background: rgba(253, 253, 253, 0.8);
+  border-radius: 10px;
+}
+.contact-us-page-content-one-div1,
+.contact-us-page-content-one-div2 {
+  padding: 1%;
+}
+.contact-us-page-content-one-div1 {
+  width: 65%;
+  padding: 1%;
+}
+.contact-us-page-content-one-div1 h2 {
+  font-size: 55px;
+  letter-spacing: 1px;
+  margin-top: 10%;
+  font-weight: 700;
+  padding: 1%;
+}
+.contact-us-page-content-one-div1 p {
+  padding: 3%;
+  font-size: 32px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  background: rgba(122, 122, 122, 0.8);
+  border-radius: 10px;
+}
+.contact-us-page-content-one-div2 {
+  width: 35%;
+  padding: 1%;
+}
+.contact-us-page-content-one-div2 img {
+  margin: 7%;
+  padding: 1%;
+}
+
+.contact-us-page-contact-form {
+  margin: 10%;
+  padding: 1%;
+  background: rgba(253, 253, 253, 0.8);
+  border-radius: 10px;
+}
+.contact-us-page-contact-form h2 {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5px;
+  border-radius: 10px;
+  background: rgba(122, 122, 122, 0.8);
+}
+.contact-us-page-contact-form h2 span {
+  font-size: 15px;
+}
+
+.contact-us-page-contact-form form {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+.contact-us-page-contact-form form label {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+.contact-us-page-contact-form form input,
+textarea {
+  padding: 1%;
+  border: 1px solid black;
+  border-radius: 10px;
+  resize: none;
+  outline: none;
+}
+.contact-us-form-message-input-field {
+  height: 10%;
+}
+.contact-us-page-contact-form form button {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 3% 0 0 40%;
+  padding: 1%;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 20%;
+}
+.contact-us-page-content-two {
+  background: rgba(253, 253, 253, 0.8);
+  border-radius: 10px;
+  margin: 6%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us-page-content-two p {
+  background: rgba(122, 122, 122, 0.8);
+  padding: 1%;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.contact-us-page-content-two-div1 h2 {
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.contact-us-page-content-two-div1 {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  background: rgba(184, 184, 184, 0.8);
+}
+
+.contact-us-page-content-two-div1 a {
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+/* courses page */
+.search-section {
+  margin-top: 5%;
+}
+.search-form {
+  padding: 3%;
+}
+.search-form input {
+  margin-left: 15%;
+  border: 3px solid black;
+  padding: 10px;
+  width: 52%;
+  border-radius: 15px;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #c5ecc5;
+}
+.search-form button {
+  border: 3px solid black;
+  padding: 10px;
+  width: 12%;
+  border-radius: 15px;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #c5ecc5;
+}
+
+.header-tutorials {
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 45px;
+  background-color: rgba(228, 225, 225, 0.8);
+  padding: 1%;
+}
+.video-section {
+  display: flex;
+}
+.videos {
+  width: 80%;
+  padding: 1%;
+  margin: 1% 0 1% 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 30px;
+  justify-content: center;
+}
+.videos div {
+  background-color: rgba(228, 225, 225, 0.7);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 2px;
+  width: 350px;
+  text-align: center;
+  overflow: hidden;
+}
+.videos div iframe {
+  border-radius: 10px;
+  width: 340px;
+  height: 200px;
+}
+.videos div h3 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+.content-video {
+  background-color: black;
+  width: 18%;
+  margin: 1% 0 0 1%;
+  text-align: center;
+  padding: 10px;
+  height: 250px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.content-video h1 {
+  background-color: rgba(204, 200, 200, 0.8);
+  padding: 2%;
+  border-radius: 10px;
+}
+.content-video a {
+  text-decoration: none;
+}
+.content-video a h3 {
+  margin: 15% 0 0 0;
+  font-size: 20px;
+  padding: 10px;
+  letter-spacing: 1px;
+  animation: blinking-free-ebooks-sign-on-courses-page 3s infinite;
+}
+@keyframes blinking-free-ebooks-sign-on-courses-page {
+  0% {
+    color: aqua;
+  }
+  25% {
+    color: rgb(2, 252, 15);
+  }
+  50% {
+    color: rgb(0, 89, 255);
+  }
+  75% {
+    color: rgb(255, 183, 0);
+  }
+  100% {
+    color: black;
+  }
+}

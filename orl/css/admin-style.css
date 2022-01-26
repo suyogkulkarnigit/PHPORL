@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&family=Scheherazade+New&display=swap");
+
+/* font-family: "Gemunu Libre", sans-serif;
+  font-family: "Scheherazade New", serif; */
+
+/* CSS FOR ALL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("../Images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Gemunu Libre", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* navbar */
+.admin-page-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.admin-page-navbar-logo {
+  font-size: 55px;
+  font-weight: 700;
+  margin-right: 45%;
+}
+.admin-page-navbar-logo a {
+  text-decoration: none;
+  color: black;
+}
+.admin-page-navbar-logo2 {
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+.admin-page-navbar-menus {
+  margin-right: 7%;
+}
+.admin-page-navbar-menus ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.admin-page-navbar-menus ul li {
+  margin-left: 13%;
+  font-size: 22px;
+  margin-right: 10%;
+  padding: 15px;
+}
+.admin-page-navbar-menus ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.admin-page-navbar-menus ul li a:hover {
+  color: #28a728;
+}
+
+/*admin gome page content */
+.xyz {
+  height: 35vw;
+  margin: 4px 0 0 0;
+}
+.admin-pannel-home-page-content {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+  padding: 3%;
+  background: rgba(255, 255, 255, 0.2);
+  height: 70vh;
+  overflow: auto;
+}
+.admin-pannel-total-number {
+  margin: 2% 0 0 0;
+  height: 25vh;
+  border-radius: 10px;
+  padding: 1%;
+  background: rgba(231, 211, 211, 0.8);
+}
+.admin-pannel-total-number-menu-name {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 2% 0 0 1%;
+}
+.admin-pannel-total-number-count {
+  font-size: 55px;
+  padding: 5.5%;
+  border-radius: 10px;
+  background: rgba(182, 152, 152, 0.8);
+  margin: 3% 0 0;
+  text-align: center;
+}
+.admin-page-secondary-content {
+  background: rgba(212, 212, 212, 0.8);
+  padding: 2.3%;
+  margin-top: 0px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+  color: red;
+}
+
+.admin-page-footer {
+  height: 5vh;
+  padding: 2%;
+  background: rgba(182, 152, 152, 0.8);
+}
+.admin-page-footer {
+  height: 5vh;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.admin-page-footer span {
+  margin: 1% 0 0 0;
+}
+
+/* total number of admins */
+.add-admin-button {
+  border-bottom: 2px solid black;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+}
+.add-admin-button h1 {
+  font-size: 45px;
+  margin: 0 0 0 1%;
+}
+.add-admin-button a {
+  margin: 1% 0 0 1%;
+  padding: 10px;
+  width: 10%;
+  font-size: 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  background-color: #70be16;
+}
+
+.display-admin-header {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 22px;
+}
+.display-admin-header h3 {
+  border-bottom: 2px solid rgb(43, 18, 18);
+  width: 22%;
+  text-align: center;
+}
+.display-admin-data-container {
+  display: flex;
+  flex-direction: column;
+}
+.display-admin-data {
+  margin: 1% 0 0 0;
+  padding: 13px;
+  display: flex;
+  justify-content: space-evenly;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+}
+.display-admin-data h3 {
+  width: 22%;
+  text-align: center;
+}
+
+.display-admin-data h3 a {
+  text-decoration: none;
+  text-align: center;
+  padding: 3%;
+  border-radius: 10px;
+  color: white;
+}
+.display-admin-video-header {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 22px;
+}
+.display-admin-video-header h3 {
+  border-bottom: 2px solid rgb(43, 18, 18);
+  width: 18%;
+  text-align: center;
+}
+.display-video-data {
+  margin: 1% 0 0 0;
+  padding: 13px;
+  display: flex;
+  justify-content: space-evenly;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+}
+.display-video-data h3 {
+  width: 18%;
+  text-align: center;
+}
+.display-video-data h3 a {
+  text-decoration: none;
+  text-align: center;
+  padding: 3%;
+  border-radius: 10px;
+  color: white;
+}
